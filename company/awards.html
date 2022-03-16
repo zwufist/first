@@ -1,0 +1,130 @@
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Computer Force</title>
+
+<link href="/css/style.css" rel="stylesheet" type="text/css" />
+<link rel="icon" type="image/x-icon" href="/images/logo.ico"/>
+</head>
+
+<body>
+
+<div class="container">
+
+        <div class="slideshow-container">
+          <div class="mySlides">
+            <a href="/home.html"><img src="/images/logo.jpg" alt="logo" style="width:100%"></a>
+          </div>
+        
+          <div class="mySlides">
+           <a href="/products/computers.html"> <img src="/images/logo_pc.jpg" alt="logo_pc" style="width:100%"></a>
+          </div>
+        
+          <div class="mySlides">
+            <a href="/products/laptops.html"><img src="/images/logo_la.jpg" alt="logo_la" style="width:100%"></a>
+          </div>
+          
+          <div class="mySlides">
+            <a href="/products/monitors.html"><img src="/images/logo_mo.jpg" alt="logo_mo" style="width:100%"></a>
+          </div>  
+                
+          <a class="prev" onClick="plusSlides(-1, 0)">&#10094;</a>
+          <a class="next" onClick="plusSlides(1, 0)">&#10095;</a>
+        </div>
+
+     <ul>
+         <li><a href="/home.html">Home</a></li>
+          <li class="dropdown">
+            <a href="/products/products.html" class="dropbtn">Products</a>
+            <div class="dropdown-content">
+              <a href="/products/computers.html">Computers</a>
+              <a href="/products/laptops.html">Laptops</a>
+              <a href="/products/monitors.html">Monitors</a>
+              <a href="/products/printers.html">Printers</a>
+              <a href="/products/software.html">Software</a>
+              <a href="/products/tablets.html">Tablets</a>
+            </div>
+          </li> 
+          <li class="dropdown">
+            <a href="/member/register.html" class="dropbtn">Member</a>
+            <div class="dropdown-content">
+              <a href="/member/register.html">Member Registration</a>
+              <a href="/member/login.html">Member Login</a>
+              <a href="/member/benefit.html">Member Benefits</a>
+            </div>
+          </li>
+          <li class="dropdown">
+            <a href="/company/about.html" class="dropbtn">Company</a>
+            <div class="dropdown-content">
+              <a href="/company/about.html">About Us</a>
+              <a href="/company/contact.html">Contact Us</a>
+              <a href="/company/director.html">Board of Directors</a>
+              <a href="/company/history.html">Company History</a>
+              <a href="/company/awards.html">Company Awards</a>
+            </div>
+          </li>  
+          <li class="dropdown">
+            <a href="/news/news.html" class="dropbtn">News</a>
+            <div class="dropdown-content">
+              <a href="/news/news.html">IT News/Blog</a>
+              <a href="/news/events.html">Upcoming Events</a>
+              <a href="/news/vouchers.html">Gift Vouchers</a>
+            </div>
+          </li>                   
+          <li class="dropdown">
+            <a href="/faq/faq.html" class="dropbtn">FAQ</a>
+            <div class="dropdown-content">
+              <a href="/faq/online.html">Online Enquires</a>
+              <a href="/faq/cc.html">Click and Collect</a>
+              <a href="/faq/delivery.html">Delivery Info</a>
+              <a href="/faq/privacy.html">Privacy Policy</a>           
+              <a href="/faq/sitemap.html">Sitemap</a>           
+            </div>
+          </li> 
+            <div align="right">
+             	<label for="site-search" style="color: #F5F5F5;">Product Search:</label>
+                <input type="search" id="site-search" name="q" aria-label="Search through site content">
+                <button class="button">Submit</button>
+            </div>   
+    </ul>
+
+    <!-- end .header -->
+  <div class="sidebar1">  
+    <p>&nbsp;</p>
+    <!-- end .sidebar1 -->
+  </div>
+  
+  <div class="content">
+   <h2><b>Company Awards</b></h2>
+   <p>The company's premises were originally built in the early 1960s with a brick exterior and a tin roof. All lighting is currently provided by incandescent lightbulbs. Heating and cooling are provided by a very old ducted system.</p>
+	
+  </div>
+  <div class="footer">
+    <p align="center"><small>&copy; 2022 Computer Force. All Rights Reserved. 
+    </p>
+    <p align="center"> Author: Zheng Wu</p>
+    <!-- end .footer --></div>
+  <!-- end .container --></div>
+<script>
+var slideIndex = [1,1];
+var slideId = ["mySlides"]
+showSlides(1, 0);
+showSlides(1, 1);
+
+function plusSlides(n, no) {
+  showSlides(slideIndex[no] += n, no);
+}
+
+function showSlides(n, no) {
+  var i;
+  var x = document.getElementsByClassName(slideId[no]);
+  if (n > x.length) {slideIndex[no] = 1}    
+  if (n < 1) {slideIndex[no] = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex[no]-1].style.display = "block";  
+}
+</script>
+</body>
+</html>
